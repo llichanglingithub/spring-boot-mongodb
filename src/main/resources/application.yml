@@ -1,0 +1,20 @@
+# 配置mongondb note:mongo3.x will not use host and port,only use uri
+# 如果是mongo3.x的话，host和port没用，需要uri。
+# MongoDB shell version: 3.2.8 系统中使用
+# host: localhost
+# port: 27017
+# messages:
+#    basename: i18n/messages
+#    cache-seconds: 3600
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mongoTest
+  messages:
+    basename: messages
+    cache-seconds: 3600
+  thymeleaf:
+    cache: false
+
+  
